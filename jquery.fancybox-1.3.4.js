@@ -316,12 +316,12 @@
 			_show();
 		},
 
-		_show = function() { console.log('_show');
+		_show = function() { 
 			var pos, equal;
 
 			loading.hide();
 
-			if (wrap.is(":visible") && false === currentOpts.onCleanup(currentArray, currentIndex, currentOpts)) {
+			if (wrap.is(":visible")) {
 				$.event.trigger('fancybox-cancel');
 
 				busy = false;
